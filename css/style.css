@@ -43,12 +43,12 @@ body {
     width: auto;
 }
 
-.menu-container ol li {
+.menu-container ul li {
 	float: left;
-
+	list-style: none;
 }
 
-.menu-container ol li a {
+.menu-container ul li a {
 	color: #fff;
     display: block;
     font-size: 22px;
@@ -65,7 +65,7 @@ body {
     transition: all 0.05s;
 }
 
-.menu-container ol li a:hover {     
+.menu-container ul li a:hover {     
 	border-bottom: 4px solid #d73837;
 	-moz-box-shadow: 0px 2px 0px #1cb1b1;      
 	-webkit-box-shadow: 0px 2px 0px #1cb1b1;     
@@ -86,6 +86,10 @@ body {
     background: url("../img/search-icon.png") 175px 0px no-repeat #262626;
 }
 
+#hamburger-menu {
+	display: none;
+}
+
 
 /* Making layout responsive */
 @media all and (max-width: 1270px) {
@@ -93,7 +97,7 @@ body {
 		margin-top: 30px;
 	}
 
-	.menu-container ol li a {
+	.menu-container ul li a {
 		font-size: 20px;
 	}
 }
@@ -103,7 +107,7 @@ body {
 		margin-left: 50px;
 	}
 
-	.menu-container ol li a {
+	.menu-container ul li a {
 		font-size: 18px;
 		margin: 0 15px;
 	}
@@ -111,17 +115,17 @@ body {
 
 @media all and (max-width: 1070px) {
 	.menu-container {
-		margin-top: 32px;
+		margin-top: 31px;
 		margin-left: 30px;
 	}
 
-	.menu-container ol li a {
+	.menu-container ul li a {
 		font-size: 16px;
 	}
 
 }
 
-@media all and (max-width: 1030px) {
+@media all and (max-width: 1035px) {
 	.menu-container {
 		margin-left: 10px;
 	}
@@ -132,15 +136,80 @@ body {
 	}
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 990px) {
 	#search {
 		width: 120px;
 		background-position: 95px 0;
 	}
 }
 
-@media all and (max-width: 890px) {
+@media all and (max-width: 940px) {
 	#search {
 		display: none;
 	}
+
+	#hamburger-menu {
+		display: block;
+	    padding: 20px;
+	    float: right;
+	    box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+	    border-radius: 3px;
+	    background: #303030;
+	    text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+	    color: #777;
+	    font-size: 20px;
+	    transition: color linear 0.15s;
+	    border: none;
+	    cursor: pointer;
+	    position: relative;
+	    top: 40px;
+	    text-decoration: none;
+	}
+
+	#hamburger-menu:hover, #hamburger-menu.active {
+		/*color:#66a992;*/
+		color: #1cb1b1;
+		background-color: #434343;
+	}
+
+	.menu-container {
+	    position: relative;
+	    display: block;
+	    width: 170px;
+	    float: right;
+	    top: 122px;
+	    margin-top: 0;
+	    left: 60px;
+	}
+
+	.menu-container ul.active {
+        display:none;
+    }
+
+	.menu-container ul {
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+	    border-radius: 3px;
+	    background: #303030;
+	    padding: 10px 0px;
+	    width: 100%;
+	    height: 240px;
+	}
+
+	.menu-container ul:after {  
+		width: 0px;
+	    height: 0px;
+	    position: absolute;
+	    top: 0%;
+	    right: 22px;     
+        content: '';
+        transform: translate(0%, -100%);
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #303030;
+    }
+
+    .menu-container ul li a {
+		margin: 0 20px;
+	}
+
 }

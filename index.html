@@ -15,7 +15,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="img/favicon.png">
 
-
+	<!-- Jquery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
 	<section class="container">
@@ -26,22 +27,25 @@
 				</a>
 			</div>
 
-			<div class="menu-container">
-				<ol>
+			<a href="#" id="hamburger-menu">&#9776;</a>
+
+			<nav class="menu-container">
+				<ul class="active">
 					<li><a href="#">Início</a></li>
 					<li><a href="#">Regulamento</a></li>
 					<li><a href="#">Premiação</a></li>
 					<li><a href="#">Covers</a></li>
 					<li><a href="#">Quiz</a></li>
 					<li><a href="#">Contato</a></li>
-				</ol>
-			</div>
+				</ul>
+			</nav>
 
-			<div class="search-container">
+			<form class="search-container">
 				<input type="search" autocomplete="on" id="search">
-			</div>
+			</form>
 		</header>
-
 	</section>
+
+	<script type="text/javascript" src="js/hamburgermenu.js"></script>
 </body>
 </html>
