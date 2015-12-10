@@ -144,6 +144,10 @@ body {
 }
 
 @media all and (max-width: 940px) {
+	.header {
+		height: 95px;
+	}
+
 	#search {
 		display: none;
 	}
@@ -177,9 +181,9 @@ body {
 	    display: block;
 	    width: 170px;
 	    float: right;
-	    top: 122px;
+	    top: 115px;
 	    margin-top: 0;
-	    left: 60px;
+	    left: 61px;
 	}
 
 	.menu-container ul.active {
@@ -212,4 +216,17 @@ body {
 		margin: 0 20px;
 	}
 
+}
+
+@media screen and (max-width: 419px) {
+	.menu-container {
+		left: 0;
+		top: 48px;	
+	}
+}
+
+@media screen and (max-width: 341px) {
+	.menu-container {
+		top: 0;
+	}
 }
