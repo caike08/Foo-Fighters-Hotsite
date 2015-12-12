@@ -6,6 +6,16 @@
  * Decebember 2015
  *
 */
+@font-face {
+	font-family: 'War is Over';
+	src: url(../font/War is Over.ttf);
+}
+
+@font-face {
+	font-family: 'White Elephant';
+	src: url(../font/White Elephant.ttf);
+}
+
 
 * {
 	margin: 0;
@@ -14,17 +24,37 @@
 
 body {
 	font-family: 'Roboto Condensed', sans-serif;
-	background-color: #000;
+	background-color: #0F0F0F;
+	width: 100%;
+	background: url(../img/bkg-gen.png);
 }
 
+/* GERAL */
 .container {
+	height: 900px;
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
 
+
+/* INICIO */
+
+#inicio {
+	background: url("../img/bkg1-hd.png") center center fixed #0F0F0F;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .header {
-	margin: 15px auto;
+	margin: 0 auto;
 	width: 95%;
-	height: 235px;
+	height: 250px;
+	padding-top: 20px;
 }
 
 .logo {
@@ -63,6 +93,11 @@ body {
     -ms-transition: all 0.05s;
     -o-transition: all 0.05s;
     transition: all 0.05s;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.3);
+    -webkit-user-select: none;  
+	-moz-user-select: none;     
+	-ms-user-select: none;      
+	user-select: none; 
 }
 
 .menu-container ul li a:hover {     
@@ -88,6 +123,89 @@ body {
 
 #hamburger-menu {
 	display: none;
+}
+
+.brand-title {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 850px;
+    background: url(../img/logo-promo.png) center center fixed transparent;
+}
+
+.brand-title img {
+
+}
+
+/*
+#title {
+	font-size: 148px;
+    font-family: "War is Over";
+}
+
+#subtitle {
+	font-family: "White Elephant";
+    font-size: 24px;
+    transform: scale(2, 3);
+	-webkit-transform:scale(2,3); 
+	-moz-transform:scale(2,3); 
+	-ms-transform:scale(2,3); 
+	-o-transform:scale(2,3); 
+}
+*/
+
+.copyright {
+	bottom: 0;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    width: 300px;
+}
+
+.copyright p {
+	font-size: 10px;
+	color: #333333;
+	text-align: right;
+}
+
+/* REGULAMENTO */
+#regulamento {
+	color: #000;
+    font-size: 15px;
+    height: auto;
+    margin-bottom: 30px;
+    min-height: 670px;
+}
+
+#regulamento nav {
+	background-color: #fff;
+    height: 80%;
+    margin: 70px auto 0;
+    width: 90%;
+    border-radius: 5px;
+}
+
+#regulamento nav h1, #regulamento nav h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#regulamento nav h1 {padding: 20px 15px 15px;}
+
+#regulamento nav h2 {padding: 5px 15px;}
+
+#regulamento nav p {padding: 1px 15px;}
+
+#regulamento nav p:last-child { padding-bottom: 20px}
+
+/* PREMIAÇÃO*/
+#premiacao {
+	width: 765px;
+	margin: auto;
+}
+
+#premiacao div img {
+	
 }
 
 
@@ -177,13 +295,14 @@ body {
 	}
 
 	.menu-container {
-	    position: relative;
 	    display: block;
-	    width: 170px;
 	    float: right;
-	    top: 115px;
-	    margin-top: 0;
 	    left: 61px;
+	    margin-top: 0;
+	    position: relative;
+	    top: 115px;
+	    width: 170px;
+	    z-index: 999;
 	}
 
 	.menu-container ul.active {
@@ -216,6 +335,11 @@ body {
 		margin: 0 20px;
 	}
 
+
+	#premiacao div img {
+		width: 350px;
+		height: 274px;
+	}
 }
 
 @media screen and (max-width: 419px) {
