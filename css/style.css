@@ -57,6 +57,7 @@ body {
     padding-top: 20px;
     position: fixed;
     width: 95%;
+    z-index: 50;
 }
 
 .logo {
