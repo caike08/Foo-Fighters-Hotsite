@@ -127,33 +127,17 @@ body {
 	display: none;
 }
 
-.brand-title {
-    position: relative;
-    margin: auto;
-    width: 100%;
-    max-width: 850px;
-}
-
 .brand-title img {
-
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	max-width: 800px;
+	position: relative;
+	bottom: 0;
+	z-index: 10;
+	top: 375px;
 }
-
-/*
-#title {
-	font-size: 148px;
-    font-family: "War is Over";
-}
-
-#subtitle {
-	font-family: "White Elephant";
-    font-size: 24px;
-    transform: scale(2, 3);
-	-webkit-transform:scale(2,3); 
-	-moz-transform:scale(2,3); 
-	-ms-transform:scale(2,3); 
-	-o-transform:scale(2,3); 
-}
-*/
 
 .copyright {
 	bottom: 0;
@@ -202,13 +186,19 @@ body {
 
 /* PREMIAÇÃO*/
 #premiacao {
-	width: 765px;
-	margin: auto;
 	padding-top: 180px;
 }
 
-#premiacao div img {
-	
+#premiacao div {
+	margin: auto;
+}
+
+#premiacao img {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	max-width: 900px;
 }
 
 #scroll-top {
@@ -385,19 +375,14 @@ body {
 		margin: 0 20px;
 	}
 
-
-	#premiacao div img {
-		width: 350px;
-		height: 274px;
-	}
 }
+
 
 @media screen and (max-width: 419px) {
 	.menu-container {
 		left: -20px;
 		top: 48px;
 	}
-
 }
 
 @media screen and (max-width: 341px) {
@@ -405,3 +390,4 @@ body {
 		top: -30px;
 	}
 }
+
