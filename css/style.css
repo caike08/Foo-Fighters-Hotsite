@@ -6,16 +6,6 @@
  * Decebember 2015
  *
 */
-@font-face {
-	font-family: 'War is Over';
-	src: url(../font/War is Over.ttf);
-}
-
-@font-face {
-	font-family: 'White Elephant';
-	src: url(../font/White Elephant.ttf);
-}
-
 
 * {
 	margin: 0;
@@ -243,6 +233,54 @@ body {
     -ms-transition: all 0.05s;
     -o-transition: all 0.05s;
     transition: all 0.05s;
+}
+
+#covers {
+	color: #fff;
+    padding-top: 180px;
+}
+
+.video-container {
+	margin: 20px auto;
+    width: 80%;
+}
+
+#covers div span {
+	float: left;
+   	padding: 15px 45px;
+}
+
+#covers div span img {
+	clear: left;
+	cursor: pointer;
+}
+
+#covers div span div {
+	clear: both;
+    display: block;
+}
+
+#covers div span p { 
+	float: left; 
+    font-size: 12px;
+    font-weight: bold;
+}
+
+p.like, p.dislike {
+	padding: 0 5px 0 15px;
+	background: url(../img/like-dislike.png) 0 0 no-repeat transparent;
+}
+
+p.vid-title { width: 135px;}
+
+p.like { 
+	color: #2571B5;
+	background-position: 3px 3px;
+}
+
+p.dislike {
+	color: #C91C16;
+	background-position: 3px -11px;
 }
 
 
