@@ -248,7 +248,7 @@ body {
 
 .video-container {
     height: 80%;
-    margin: 10px auto 0;
+    margin: auto;
     width: 78%;
 }
 
@@ -332,6 +332,7 @@ p.dislike {
 
 img.quiz-options {
 	padding: 15px 25px;
+	cursor: pointer;
 }
 
 /* FOOTER */
