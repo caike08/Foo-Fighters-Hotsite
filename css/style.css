@@ -17,6 +17,7 @@ body {
 	background-color: #0F0F0F;
 	width: 100%;
 	background: url(../img/bkg-gen.png);
+	color: #FFF;
 }
 
 /* GERAL */
@@ -27,6 +28,7 @@ body {
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
+    clear: both;
 }
 
 
@@ -77,7 +79,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     letter-spacing: -1px;
-    margin: 0 20px;
+    margin: 0 25px;
     padding: 10px 5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -235,14 +237,19 @@ body {
     transition: all 0.05s;
 }
 
+/* COVERS */
+
 #covers {
 	color: #fff;
     padding-top: 180px;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .video-container {
-	margin: 20px auto;
-    width: 80%;
+    height: 80%;
+    margin: 10px auto 0;
+    width: 75%;
 }
 
 #covers div span {
@@ -283,9 +290,60 @@ p.dislike {
 	background-position: 3px -11px;
 }
 
+/* QUIZ */
+
+#quiz {
+	height: auto;
+    padding-bottom: 10px;
+    padding-top: 180px;
+}
+
+#quiz nav {
+	background: url(../img/bg-quiz-jpg.jpg) center center fixed transparent;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 90%;
+	height: 95%;
+	margin: auto;
+}
+
+.quiz-title { 
+	width: 100%;
+	height: 325px;
+}
+
+.quiz-title img {
+	display: block;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 30px;
+	width: 100%;
+	height: auto;
+	max-width: 600px;
+}
+
+.quiz-container {
+	margin: 25px auto;
+    width: 80%;
+}
+
+img.quiz-options {
+	padding: 15px 25px;
+}
+
+/* FOOTER */
+
+footer p { 
+	text-align: center; 
+	margin: 10px 0;
+	font-size: 12px;
+}
 
 /* Making layout responsive */
-@media all and (max-width: 1270px) {
+@media all and (max-width: 1175px) {
 	.menu-container {
 		margin-top: 30px;
 	}
@@ -295,18 +353,7 @@ p.dislike {
 	}
 }
 
-@media all and (max-width: 1220px) {
-	.menu-container {
-		margin-left: 50px;
-	}
-
-	.menu-container ul li a {
-		font-size: 18px;
-		margin: 0 15px;
-	}
-}
-
-@media all and (max-width: 1070px) {
+@media all and (max-width: 1150px) {
 	.menu-container {
 		margin-top: 31px;
 		margin-left: 30px;
@@ -315,6 +362,8 @@ p.dislike {
 	.menu-container ul li a {
 		font-size: 16px;
 	}
+
+	.video-container { width: 80%;}
 
 }
 
@@ -330,13 +379,6 @@ p.dislike {
 }
 
 @media all and (max-width: 990px) {
-	#search {
-		width: 120px;
-		background-position: 95px 0;
-	}
-}
-
-@media all and (max-width: 940px) {
 	.header {
 		height: 95px;
 		position: fixed;
@@ -380,7 +422,7 @@ p.dislike {
 	    position: relative;
 	    top: 115px;
 	    width: 170px;
-	    z-index: 9999;
+	    z-index: 99999;
 	}
 
 	.menu-container ul.active {
@@ -393,8 +435,7 @@ p.dislike {
 	    background: #303030;
 	    padding: 10px 0px;
 	    width: 100%;
-	    height: 240px;
-	    z-index: 99999;
+	    height: 210px;
 	}
 
 	.menu-container ul:after {  
@@ -421,6 +462,10 @@ p.dislike {
 	.menu-container {
 		left: -20px;
 		top: 48px;
+	}
+	
+	.video-container {
+	    width: 75%;
 	}
 }
 
